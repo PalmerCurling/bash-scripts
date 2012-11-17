@@ -5,7 +5,7 @@
 
 cd ~/workspace/Cards\ against\ Humanity
 git pull
-cd ~/workspace/RU-Maps/assets/RUmaps
+cd ~/workspace/RU-Maps/assets/RUMaps
 git pull
 cd ~/Scripts
 git pull
