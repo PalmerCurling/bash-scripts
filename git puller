@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#script with manual pointing at folders i use with git repos in them.
+#manual updating of this info for now, ill see about adding automated addition at a later point
+
+cd ~/workspace/Cards\ against\ Humanity
+git pull
+cd ~/workspace/RU-Maps/assets/RUmaps
+git pull
+cd ~/Scripts
+git pull
