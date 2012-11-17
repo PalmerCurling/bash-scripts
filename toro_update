@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/android/system/
+
+repo sync
+
+. build/envsetup.sh && brunch toro 
