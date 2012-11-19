@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd ~/android/system/
+cd ~/android/cm_10/
 repo sync
 . build/envsetup.sh && brunch toro
-cp ~/android/system/out/target/product/toro/cm-10* ~/
+cp ~/android/cm_10/out/target/product/toro/cm-10* ~/
 cd ..
 rm -rf ./toro*
