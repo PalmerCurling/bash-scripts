@@ -1,8 +1,7 @@
 #!/bin/bash
 
 cd ~/android/cm_10/
+rm -rf ./android/cm_10/out/product/toro*
 repo sync
 . build/envsetup.sh && brunch toro
 cp ~/android/cm_10/out/target/product/toro/cm-10* ~/Dropbox/android/zips/Gnex
-cd ..
-rm -rf ./toro*
