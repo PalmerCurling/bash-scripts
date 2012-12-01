@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/android/system/
+repo sync
+make clobber
+. build/envsetup.sh && brunch tenderloin
+cp ~/android/cm_10/out/target/product/tenderloin/cm-10* ~/Dropbox/android/zips/TouchPad
