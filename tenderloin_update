@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/android/system/
+cd ~/android
 repo sync
 make clobber
 . build/envsetup.sh && brunch tenderloin
