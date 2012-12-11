@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/android
+cd ~/android/CM10
 repo sync
 make clobber
 . build/envsetup.sh && brunch toro
