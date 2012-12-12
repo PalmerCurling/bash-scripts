@@ -8,3 +8,5 @@ cd ~/workspace/RUMaps
 git pull
 cd ~/bash-scripts
 git pull
+cd ~/.local/share/gnome-shell/extensions/vibou.gTile
+git pull
