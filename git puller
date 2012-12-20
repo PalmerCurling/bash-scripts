@@ -4,9 +4,9 @@
 
 cd ~/workspace/RUMAD-Cards-Against-Humanity
 git pull
-cd ~/workspace/RUMaps
+cd ~/workspace/RUMaps/assets/www
 git pull
 cd ~/bash-scripts
 git pull
-cd ~/.local/share/gnome-shell/extensions/vibou.gTile
+cd ~/my-website
 git pull
