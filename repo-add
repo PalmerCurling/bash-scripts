@@ -5,23 +5,25 @@
 #sudo apt-get purge lightdm*
 #sudo apt-get purge linux-image* linux headers*
 
-##adds bumblebee, theme and gnome3 repo
+##adds bumblebee,ubuntu tweak tool, mint theme and gnome3 repos
 sudo apt-add-repository ppa:gnome3-team/gnome3
 sudo apt-add-repository ppa:bumblebee/stable
 sudo apt-add-repository ppa:webupd8team/themes
+sudo add-apt-repository ppa:tualatrix/ppa
 
 ##enables multiarch for 64 bit systems
 sudo dpkg --add-architecture i386
 
 ##installs liquorix and dropbox repos
-#sudo echo "deb http://liquorix.net/debian sid main" >> /etc/apt/sources.list
+#echo "deb http://liquorix.net/debian sid main" | sudo tee /etc/apt/sources.list.d/liquorix.list
+#echo "deb-src http://liquorix.net/debian sid main" | sudo tee -a /etc/apt/sources.list.d/liquorix.list
 #sudo echo "deb http://linux.dropbox.com/ubuntu natty main" >> /etc/apt/sources.list
 
 ##Install all the things (last section is cyanogenmod build related things)
 sudo apt-get update
 #sudo apt-get install '^liquorix-([^-]+-)?keyring.?'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo apt-get install gnome bumblebee bumblebee-nvida
+sudo apt-get install gnome bumblebee bumblebee-nvida dropbox
 sudo apt-get install build essential
 sudo apt-get install g++-multilib
 sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 openjdk-6-jdk pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
@@ -29,4 +31,6 @@ sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurs
 sudo apt-get dist-upgrade
 sudo apt-get install firefox chromium-browser eclipse
 sudo apt-get install mint-themes mint-x-icons
+sudo apt-get install libreoffice
+sudo apt-get purge abiword*
 sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove

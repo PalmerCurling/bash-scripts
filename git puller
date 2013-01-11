@@ -6,7 +6,15 @@ cd ~/workspace/RUMAD-Cards-Against-Humanity
 git pull
 cd ~/workspace/RUMaps/assets/www
 git pull
-cd ~/bash-scripts
+cd ~/git_repos/bash-scripts
 git pull
-cd ~/my-website
+cd ~/git_repos/my-website
+git pull
+cd ~/git_repos/mangaget
+git pull
+cd ~/git_repos/DIFmplayer
+git pull
+cd ~/git_repos/Pokemon-MMO
+git pull
+cd ~/git_repos/the.github.pirates/
 git pull
