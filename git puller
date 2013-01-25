@@ -34,6 +34,6 @@ echo toro script
 cd ~/android
 git pull
 
-echo MangaFox-Download-Script
-cd ~/git_repos/MangaFox-Download-Script
+echo manga_downloader
+cd ~/git_repos/manga_downloader
 git pull
