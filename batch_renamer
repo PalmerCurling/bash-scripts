@@ -1,5 +1,5 @@
 #run these for various batch renames
-
+#todo: make this interactive
 
 #for adding prefix
 for file in *.<file_extension> ; do mv "${file}" "<prefix>_${file}"; done 
