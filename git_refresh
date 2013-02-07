@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#script with manual pointing at folders i use with git repos in them. manual updating of this info for now, ill see about adding automated addition at a later point
+
+
+echo Cards against humanity
+cd ~/workspace/RUMAD-Cards-Against-Humanity
+git pull
+
+echo rumaps
+cd ~/workspace/RUMaps
+git pull
+
+echo bash scripts
+cd ~/git_repos/bash-scripts
+git pull
+
+echo website
+cd ~/git_repos/my-website
+git pull
+
+echo DIFmplayer
+cd ~/git_repos/DIFmplayer
+git pull
+
+echo Pokemon MMO
+cd ~/git_repos/Pokemon-MMO
+git pull
+
+echo toro script
+cd ~/android
+git pull
+
+echo manga_downloader
+cd ~/git_repos/manga_downloader
+git pull
+
+echo fuck
+cd ~/workspace/fuck
+git pull
+
+
+echo Distinguished
+cd ~/git_repos/vim-distinguished
+git pull
+
+echo dotfiles
+cd ~/git_repos/dotfiles
+git pull
+git submodule foreach git pull origin master
+git add .
+git commit
+git push
