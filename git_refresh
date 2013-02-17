@@ -31,10 +31,6 @@ echo toro script
 cd ~/android
 git pull
 
-echo manga_downloader
-cd ~/git_repos/manga_downloader
-git pull
-
 echo fuck
 cd ~/workspace/fuck
 git pull
@@ -42,6 +38,10 @@ git pull
 
 echo Distinguished
 cd ~/git_repos/vim-distinguished
+git pull
+
+echo Conky Infinity
+cd ~/git_repos/ConkyInfinitySVG
 git pull
 
 echo dotfiles
