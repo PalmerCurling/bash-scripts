@@ -44,6 +44,14 @@ echo Conky Infinity
 cd ~/git_repos/ConkyInfinitySVG
 git pull
 
+echo Manga downloader
+cd ~/git_repos/manga_downloader
+git pull
+
+echo MangaFox Downloader
+cd cd~/git_reposMangaFox-Download-Script
+git pull
+
 echo dotfiles
 cd ~/git_repos/dotfiles
 git pull
