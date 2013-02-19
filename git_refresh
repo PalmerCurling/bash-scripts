@@ -49,7 +49,7 @@ cd ~/git_repos/manga_downloader
 git pull
 
 echo MangaFox Downloader
-cd cd~/git_reposMangaFox-Download-Script
+cd ~/git_repos/MangaFox-Download-Script
 git pull
 
 echo dotfiles
