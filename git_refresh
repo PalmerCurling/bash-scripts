@@ -36,10 +36,6 @@ cd ~/workspace/fuck
 git pull
 
 
-echo Distinguished
-cd ~/git_repos/vim-distinguished
-git pull
-
 echo Conky Infinity
 cd ~/git_repos/ConkyInfinitySVG
 git pull
