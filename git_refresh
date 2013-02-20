@@ -11,6 +11,14 @@ echo rumaps
 cd ~/workspace/RUMaps
 git pull
 
+echo cs 111 notes
+cd ~/workspace/cs111
+git pull
+
+echo CS Assignments
+cd ~/workspace/assignments
+git pull
+
 echo bash scripts
 cd ~/git_repos/bash-scripts
 git pull
