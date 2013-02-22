@@ -6,11 +6,13 @@ for dir in ~/workspace/*/
 		git pull
 	done
 
-for dir in ~/git_repos/*/
-	do
-		dir=${dir%*/}
-		echo $dir
-		git pull
-	done
+#############################
+#for dir in ~/git_repos/*/	#
+#	do						#
+#		dir=${dir%*/}		#
+#		echo $dir			#
+#		git pull			#
+#	done					#
+#############################
 cd ~/git_repos/dotfiles
 git submodule foreach git pull origin master
