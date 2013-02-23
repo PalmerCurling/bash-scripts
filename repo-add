@@ -62,3 +62,7 @@ heroku login
 
 
 sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
+
+#Specific Audio Codec setting for Alienware M14xR2
+sudo echo 'options snd-hda-intel model=dell-=m6' >> "/etc/modprobe.d/alsa-base.conf"
+sudo echo 'alias snd-card-0 snd-hda-intel' >> "/etc/modprobe.d/alsa-base.conf"
