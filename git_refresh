@@ -1,5 +1,5 @@
 #!/bin/bash
-for dir in ~/workspace/*/
+for dir in ~/git_repos/*/
 	do
 		dir=${dir%*/}
 		echo $dir
@@ -7,7 +7,7 @@ for dir in ~/workspace/*/
 	done
 
 #############################
-#for dir in ~/git_repos/*/	#
+#for dir in ~/workspace/*/	#
 #	do						#
 #		dir=${dir%*/}		#
 #		echo $dir			#
