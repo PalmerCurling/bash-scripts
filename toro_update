@@ -3,5 +3,7 @@ cd ~/android/cm10
 repo selfupdate
 repo sync -j8 -c
 make clobber
-. build/envsetup.sh && brunch toro
+. build/envsetup.sh
+croot
+brunch toro
 cp ./out/target/product/toro/cm-10* ~/Dropbox/android/zips/Gnex
