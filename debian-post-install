@@ -1,12 +1,5 @@
 #!/bin/bash
 
-echo "add <user> ALL=(ALL) ALL to the end of the file."
-su
-vi /etc/sudoers
-exit
-
-su install sudo
-
 #Add sources we need
 
 #enables multiarch for 64 bit systems
