@@ -43,7 +43,7 @@ sudo apt-get install firefox chromium-browser eclipse
 sudo apt-get install mint-themes mint-x-icons
 sudo apt-get install libreoffice
 sudo apt-get purge abiword*
-sudo apt-get install skype
+sudo apt-get install skype conky-all
 
 echo Download Steam and install it!
 cd Downloads
