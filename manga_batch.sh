@@ -4,7 +4,7 @@ ls ./*.pdf > pdf
 cat pdf | while read a;
 do
 	chapter=${a}
-	convert -density 600 $chapter "$chapter.jpg"
+	convert -density 300 $chapter "$chapter.jpg"
 	tar -czvf ./$chapter.cbz *.jpg
 	rm *.jpg
 done
