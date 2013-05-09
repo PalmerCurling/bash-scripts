@@ -4,14 +4,14 @@ ls ./*.pdf > pdf
 cat pdf | while read a;
 do
 	chapter=${a}
-	convert $chapter "$chapter.jpg"
+	convert -density 600 $chapter "$chapter.jpg"
 	tar -czvf ./$chapter.cbz *.jpg
 	rm *.jpg
 done
 
-for file in ./*.pdf.cbz
+for file in ./*.pdf.cbz;
 do
-	mv file file.cbz
+	mv "$file" "${file%.pdf.cbz}.cbz";
 done
 
 rm pdf
