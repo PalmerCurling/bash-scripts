@@ -6,6 +6,7 @@ do
 	chapter=${a}
 	chapter=${chapter%.pdf}
 	convert -density 300 $a "$chapter.jpg"
+	echo "ziping pages of $chapter"
 	tar -czvf ./$chapter.cbz *.jpg
 	rm *.jpg
 done
