@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/android/cm10
+cd ~/android/system
 repo selfupdate
 repo sync -j8 -c
 make clobber
