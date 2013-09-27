@@ -4,16 +4,24 @@
 #sudo apt-get purge unity*
 #sudo apt-get purge lightdm*
 
-##adds bumblebee,ubuntu tweak tool, mint theme and gnome3 repos
+##adds needed repos; check their sites for info on what each contains
+
 sudo apt-add-repository ppa:gnome3-team/gnome3
 sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+
 sudo apt-add-repository ppa:stebbins/handbrake-releases
+
 sudo apt-add-repository ppa:bumblebee/stable
-sudo apt-add-repository ppa:webupd8team/themes
-sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-add-repository ppa:zhurikhin/primus
+
+sudo apt-add-repository ppa:webupd8team/themes
+
+sudo add-apt-repository ppa:tualatrix/ppa
+
 sudo add-apt-repository ppa:upubuntu-com/chat
+
 sudo apt-add-repository ppa:ehoover/compholio 
+
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F24AEA9FB05498B7
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ precise main" >> /etc/apt/sources.list.d/dropbox.list'
@@ -32,18 +40,24 @@ sudo dpkg --add-architecture i386
 
 ##Install all the things (last section is cyanogenmod build related things)
 sudo apt-get update
+
 #sudo apt-get install '^liquorix-([^-]+-)?keyring.?'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+
 sudo apt-get install primus nautilus-dropbox
+
 sudo apt-get install build essential
 sudo apt-get install g++-multilib
 sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 
 sudo apt-get install firefox chromium-browser eclipse
 sudo apt-get install mint-themes mint-x-icons
+
 sudo apt-get install libreoffice
 sudo apt-get purge abiword*
+
 sudo apt-get install skype conky-all netflix-desktop
+sudo apt-get install libsdl-image1.2:i386 libsdl-mixer1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
 
 echo Download Steam and install it!
 cd Downloads
@@ -60,6 +74,7 @@ sudo apt-get install google-talkplugin google-music-manager-beta
 #chromeium flash update
 sudo apt-add repository ppa:skunk/pepper-flash
 sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
+sudo apt-get update && sudo apt-get install pepflashplugin-installer
 
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
