@@ -70,6 +70,7 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/musicmanager/deb/ stable main" 
 sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update 
 sudo apt-get install google-talkplugin google-music-manager-beta
+sudo apt-get install git
 
 #chromeium flash update
 sudo apt-add repository ppa:skunk/pepper-flash
