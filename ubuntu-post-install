@@ -59,10 +59,12 @@ sudo apt-get purge abiword*
 sudo apt-get install skype conky-all netflix-desktop
 sudo apt-get install libsdl-image1.2:i386 libsdl-mixer1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
 
-echo Download Steam and install it!
-cd Downloads
-curl http://media.steampowered.com/client/installer/steam.deb
-sudo dpkg -i ./steam_latest.deb
+#echo Download Steam and install it!
+#cd Downloads
+#curl http://media.steampowered.com/client/installer/steam.deb
+#sudo dpkg -i ./steam_latest.deb
+##need to update this, steam moved Things.
+
 
 echo google things!
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -73,7 +75,7 @@ sudo apt-get install google-talkplugin google-music-manager-beta
 sudo apt-get install git
 
 #chromeium flash update
-sudo apt-add repository ppa:skunk/pepper-flash
+sudo apt-add-repository ppa:skunk/pepper-flash
 sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
 sudo apt-get update && sudo apt-get install pepflashplugin-installer
 
