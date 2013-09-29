@@ -6,29 +6,23 @@
 sudo dpkg --add-architecture i386
 sudo apt-get update
 
-sudo apt-get install virtualgl-libs:i386 ia32-libs ia32-libs-gtk chromium-browser
-
-wget -O - http://suwako.nomanga.net/suwako.asc | apt-key add -
-sudo echo deb http://suwako.nomanga.net/debian sid main contrib >> /etc/apt/sources.list
-sudo echo deb-src http://suwako.nomanga.net/debian sid main >> /etc/apt/sources.list
-sudo apt-get update && sudo apt-get install bumblebee bumblebee-nvidia
-adduser eric bumblebee
+sudo apt-get install chromium-browser
 
 #install steam
-wget http://media.steampowered.com/client/installer/steam.deb
-sudo dpkg -i ./steam.deb
-rm steam.deb
+##wget http://media.steampowered.com/client/installer/steam.deb
+##sudo dpkg -i ./steam.deb
+##rm steam.deb
 
 #dropbox
-wget https://www.dropbox.com/download?dl=packages/debian/dropbox_1.4.0_amd64.deb
-sudo dpkg -i dropbox_1.4.0_amd64.deb
-rm dropbox_1.4.0_amd64.deb
+##wget https://www.dropbox.com/download?dl=packages/debian/dropbox_1.4.0_amd64.deb
+##sudo dpkg -i dropbox_1.4.0_amd64.deb
+##rm dropbox_1.4.0_amd64.deb
 
 #skype
-wget -O skype-install.deb http://www.skype.com/go/getskype-linux-deb-64
-dpkg -i skype-install.deb
-sudo apt-get -f install
-rm skype-install.deb
+##wget -O skype-install.deb http://www.skype.com/go/getskype-linux-deb-64
+##dpkg -i skype-install.deb
+##sudo apt-get -f install
+##rm skype-install.deb
 
 #Git and Android
 sudo apt-get install git g++-multilib git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
@@ -38,7 +32,7 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/musicmanager/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update
-sudo apt-get install google-talkplugin google-music-manager-beta
+sudo apt-get install google-talkplugin google-musicmanager-beta
 
 #Heroku
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
