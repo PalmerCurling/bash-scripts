@@ -52,7 +52,12 @@ sudo apt-get install netflix-desktop
 #wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 #heroku login
 
+#libs for gccg
 sudo apt-get install libsdl-image1.2:i386 lbsdl-mixer-1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
+
+#remove nano, install freedom
+sudo apt-get purge nano
+sudo apt-get install vim
 
 #Specific Audio Codec setting for Alienware M14xR2
 #sudo echo 'options snd-hda-intel model=dell-=m6' >> "/etc/modprobe.d/alsa-base.conf"
