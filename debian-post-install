@@ -31,7 +31,7 @@ sudo apt-get install nemo-dropbox
 ##rm skype-install.deb
 
 #Git and Android
-sudo apt-get install git g++-multilib git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
+sudo apt-get install git g++-multilib git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa:-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 
 sudo apt-get install eclipse
 
@@ -44,7 +44,7 @@ sudo apt-get install google-talkplugin google-musicmanager-beta
 
 #Netflix
 sudo apt-get install ttf-mscorefonts-installer
-sudo sh -c 'echo "deb http://ppa.launchpad.net/ehoover/compholio/ubuntu saucy main" >> /etc/apt/sources.list.d/ehoover-compholio.list'
+sudo sh -c 'echo "deb http://ppa.launchpad.net/ehoover/compholio/ubuntu raring main" >> /etc/apt/sources.list.d/ehoover-compholio.list'
 sudo apt-get update
 sudo apt-get install netflix-desktop
 
