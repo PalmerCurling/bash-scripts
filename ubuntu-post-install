@@ -17,8 +17,6 @@ sudo apt-add-repository ppa:zhurikhin/primus
 
 #sudo apt-add-repository ppa:webupd8team/themes
 
-sudo add-apt-repository ppa:tualatrix/ppa
-
 #sudo add-apt-repository ppa:upubuntu-com/chat
 
 sudo apt-add-repository ppa:ehoover/compholio 
@@ -47,6 +45,8 @@ sudo apt-get update
 
 sudo apt-get install primus bumblebee --install-recommends
 sudo apt-get install dropbox
+
+sudo apt-get install netflix-desktop
 
 sudo apt-get install build essential
 sudo apt-get install g++-multilib
