@@ -6,8 +6,9 @@
 
 ##adds needed repos; check their sites for info on what each contains
 
-#sudo apt-add-repository ppa:gnome3-team/gnome3
-#sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3-next
 
 sudo apt-add-repository ppa:stebbins/handbrake-releases
 
@@ -44,14 +45,15 @@ sudo apt-get update
 #sudo apt-get install '^liquorix-([^-]+-)?keyring.?'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
-sudo apt-get install primus nautilus-dropbox
+sudo apt-get install primus bumblebee --install-recommends
+sudo apt-get install dropbox
 
 sudo apt-get install build essential
 sudo apt-get install g++-multilib
 sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 
 sudo apt-get install firefox chromium-browser eclipse
-sudo apt-get install mint-themes mint-x-icons
+#sudo apt-get install mint-themes mint-x-icons
 
 sudo apt-get install libreoffice
 sudo apt-get purge abiword*
@@ -75,18 +77,22 @@ sudo apt-get install google-talkplugin google-music-manager-beta
 sudo apt-get install git
 
 #chromeium flash update
-sudo apt-add-repository ppa:skunk/pepper-flash
-sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
-sudo apt-get update && sudo apt-get install pepflashplugin-installer
+#sudo apt-add-repository ppa:skunk/pepper-flash
+#sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
+#sudo apt-get update && sudo apt-get install pepflashplugin-installer
 
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
 
-sudo apt-get install linux-headers-generic primus
+#sudo apt-get purge lightdm unity*
+#sudo apt-get install gdm gnome
+#sudo apt-get purge overlay-scrollbar
+
+sudo apt-get install linux-headers-generic
 
 sudo apt-get dist-upgrade
 sudo apt-get clean && sudo apt-get autoclean && sudo apt-get --purge autoremove
 
 #Specific Audio Codec setting for Alienware M14xR2
-sudo echo 'options snd-hda-intel model=dell-=m6' >> "/etc/modprobe.d/alsa-base.conf"
-sudo echo 'alias snd-card-0 snd-hda-intel' >> "/etc/modprobe.d/alsa-base.conf"
+#sudo echo 'options snd-hda-intel model=dell-=m6' >> "/etc/modprobe.d/alsa-base.conf"
+#sudo echo 'alias snd-card-0 snd-hda-intel' >> "/etc/modprobe.d/alsa-base.conf"
