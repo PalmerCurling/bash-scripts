@@ -43,14 +43,12 @@ sudo apt-get update
 #sudo apt-get install '^liquorix-([^-]+-)?keyring.?'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
-sudo apt-get install primus bumblebee --install-recommends
+
 sudo apt-get install dropbox
 
-sudo apt-get install netflix-desktop
-
-sudo apt-get install build essential
-sudo apt-get install g++-multilib
+sudo apt-get install build-essential
 sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
+sudo apt-get install g++-multilib
 
 sudo apt-get install firefox chromium-browser eclipse
 #sudo apt-get install mint-themes mint-x-icons
@@ -60,6 +58,7 @@ sudo apt-get purge abiword*
 
 sudo apt-get install skype conky-all netflix-desktop
 sudo apt-get install libsdl-image1.2:i386 libsdl-mixer1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
+sudo apt-get install primus bumblebee --install-recommends
 
 #echo Download Steam and install it!
 #cd Downloads
