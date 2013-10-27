@@ -4,28 +4,31 @@
 #sudo apt-get purge unity*
 #sudo apt-get purge lightdm*
 
+sudo apt-get purge nano
+sudo apt-get install vim
+
 ##adds needed repos; check their sites for info on what each contains
 
-sudo add-apt-repository ppa:gnome3-team/gnome3
-sudo add-apt-repository ppa:gnome3-team/gnome3-staging
-sudo add-apt-repository ppa:gnome3-team/gnome3-next
+#sudo add-apt-repository ppa:gnome3-team/gnome3
+#sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+#sudo add-apt-repository ppa:gnome3-team/gnome3-next
 
-sudo apt-add-repository ppa:stebbins/handbrake-releases
+#sudo apt-add-repository ppa:stebbins/handbrake-releases
 
 sudo apt-add-repository ppa:bumblebee/stable
-sudo apt-add-repository ppa:zhurikhin/primus
+#sudo apt-add-repository ppa:zhurikhin/primus
 
-#sudo apt-add-repository ppa:webupd8team/themes
+sudo apt-add-repository ppa:webupd8team/themes
 
 #sudo add-apt-repository ppa:upubuntu-com/chat
 
 sudo apt-add-repository ppa:ehoover/compholio 
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F24AEA9FB05498B7
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ precise main" >> /etc/apt/sources.list.d/dropbox.list'
-sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
-sudo apt-get install app-install-data-medibuntu apport-hooks-medibuntu
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F24AEA9FB05498B7
+#sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+#sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ precise main" >> /etc/apt/sources.list.d/dropbox.list'
+#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
+#sudo apt-get install app-install-data-medibuntu apport-hooks-medibuntu
 
 
 
@@ -44,19 +47,18 @@ sudo apt-get update
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
 
-sudo apt-get install dropbox
+#sudo apt-get install dropbox
 
-sudo apt-get install build-essential
 sudo apt-get install git-core gnupg flex bison gperf zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev:i386 mingw32 pngcrush schedtool tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 sudo apt-get install g++-multilib
 
-sudo apt-get install firefox chromium-browser eclipse
+sudo apt-get install chromium-browser eclipse
 #sudo apt-get install mint-themes mint-x-icons
 
-sudo apt-get install libreoffice
+#sudo apt-get install libreoffice
 sudo apt-get purge abiword*
 
-sudo apt-get install skype conky-all netflix-desktop
+sudo apt-get install conky-all netflix-desktop
 sudo apt-get install libsdl-image1.2:i386 libsdl-mixer1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
 sudo apt-get install primus bumblebee --install-recommends
 
@@ -72,13 +74,13 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/musicmanager/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update 
-sudo apt-get install google-talkplugin google-music-manager-beta
-sudo apt-get install git
+sudo apt-get install google-talkplugin google-musicmanager-beta
+sudo rm /etc/apt/sources.list.d/google.list
 
-#chromeium flash update
-#sudo apt-add-repository ppa:skunk/pepper-flash
-#sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
-#sudo apt-get update && sudo apt-get install pepflashplugin-installer
+#chromium flash update
+sudo apt-add-repository ppa:skunk/pepper-flash
+sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
+sudo apt-get update && sudo apt-get install pepflashplugin-installer
 
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
@@ -88,6 +90,7 @@ heroku login
 #sudo apt-get purge overlay-scrollbar
 
 sudo apt-get install linux-headers-generic
+sudo apt-get install build-essential
 
 sudo apt-get dist-upgrade
 sudo apt-get clean && sudo apt-get autoclean && sudo apt-get --purge autoremove
