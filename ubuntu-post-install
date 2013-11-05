@@ -18,7 +18,7 @@ sudo apt-get install vim
 sudo apt-add-repository ppa:bumblebee/stable
 #sudo apt-add-repository ppa:zhurikhin/primus
 
-sudo apt-add-repository ppa:webupd8team/themes
+#sudo apt-add-repository ppa:webupd8team/themes
 
 #sudo add-apt-repository ppa:upubuntu-com/chat
 
@@ -56,7 +56,7 @@ sudo apt-get install chromium-browser eclipse
 #sudo apt-get install mint-themes mint-x-icons
 
 #sudo apt-get install libreoffice
-sudo apt-get purge abiword*
+#sudo apt-get purge abiword*
 
 sudo apt-get install conky-all netflix-desktop
 sudo apt-get install libsdl-image1.2:i386 libsdl-mixer1.2:i386 libsdl-net1.2:i386 libsdl-ttf2.0-0:i386
