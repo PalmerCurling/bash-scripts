@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/android/system
+cd ~/android/cyanogenmod
 repo selfupdate
 repo sync -j8 -c
 make clobber
