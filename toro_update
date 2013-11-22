@@ -6,4 +6,4 @@ make clobber
 . build/envsetup.sh
 croot
 brunch toro
-cp ./out/target/product/toro/cm-10* ~/Dropbox/android/zips/Gnex
+cp ./out/target/product/toro/cm-11* ~/Dropbox/android/zips/Gnex
