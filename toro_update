@@ -1,9 +1,16 @@
 #!/bin/bash
+#change this line to where your source code lives
 cd ~/android/cyanogenmod
+
+#updates repo script and source
 repo selfupdate
 repo sync -j8 -c
+
+#clean build folder, build for toro
 make clobber
 . build/envsetup.sh
 croot
 brunch toro
+
+#move md5 and zip to Dropbox
 cp ./out/target/product/toro/cm-11* ~/Dropbox/android/zips/Gnex
