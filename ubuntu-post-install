@@ -20,8 +20,8 @@ apt-add-repository ppa:webupd8team/themes
 
 #sudo add-apt-repository ppa:upubuntu-com/chat
 
-apt-add-repository ppa:ehoover/compholio 
-
+#apt-add-repository ppa:ehoover/compholio 
+apt-add-repository ppa:pipelight/stable
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F24AEA9FB05498B7
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 #sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ precise main" >> /etc/apt/sources.list.d/dropbox.list'
